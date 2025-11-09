@@ -85,7 +85,7 @@ function getProduct() {
     const price = Number(prices[0].trim())
     const oldPrice = Number(prices[1].trim())
 
-    const discountPercent =  `${(100 * (1 - price / oldPrice)).toFixed(2) }%`
+    const discountPercent = `${(100 * (1 - price / oldPrice)).toFixed(2)}%`
     const discount = oldPrice - price
 
     const propElements = aboutElem.querySelectorAll('.properties li')
@@ -120,7 +120,7 @@ function getProduct() {
     }
 }
 
-function getSuggested () {
+function getSuggested() {
     const articlesElems = document.querySelectorAll('.suggested .items article')
     const suggested = []
     articlesElems.forEach((elem) => {
@@ -138,7 +138,7 @@ function getSuggested () {
     return suggested
 }
 
-function getReviews () {
+function getReviews() {
     const reviewsElems = document.querySelectorAll('.reviews .items article')
     const reviews = []
     reviewsElems.forEach((elem) => {
